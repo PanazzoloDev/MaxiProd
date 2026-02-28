@@ -1,0 +1,17 @@
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Infra.Data\bin\Debug\net6.0\maxiprod.Infra.Data.deps.json
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Infra.Data\bin\Debug\net6.0\maxiprod.Infra.Data.runtimeconfig.json
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Infra.Data\bin\Debug\net6.0\maxiprod.Infra.Data.dll
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Infra.Data\bin\Debug\net6.0\maxiprod.Infra.Data.pdb
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Infra.Data\bin\Debug\net6.0\maxiprod.Domain.dll
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Infra.Data\bin\Debug\net6.0\maxiprod.Domain.pdb
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Infra.Data\obj\Debug\net6.0\maxiprod.Infra.Data.csproj.AssemblyReference.cache
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Infra.Data\obj\Debug\net6.0\maxiprod.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Infra.Data\obj\Debug\net6.0\maxiprod.Infra.Data.AssemblyInfoInputs.cache
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Infra.Data\obj\Debug\net6.0\maxiprod.Infra.Data.AssemblyInfo.cs
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Infra.Data\obj\Debug\net6.0\maxiprod.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Infra.Data\obj\Debug\net6.0\maxiprod.21FE3975.Up2Date
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Infra.Data\obj\Debug\net6.0\maxiprod.Infra.Data.dll
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Infra.Data\obj\Debug\net6.0\refint\maxiprod.Infra.Data.dll
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Infra.Data\obj\Debug\net6.0\maxiprod.Infra.Data.pdb
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Infra.Data\obj\Debug\net6.0\maxiprod.Infra.Data.genruntimeconfig.cache
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Infra.Data\obj\Debug\net6.0\ref\maxiprod.Infra.Data.dll

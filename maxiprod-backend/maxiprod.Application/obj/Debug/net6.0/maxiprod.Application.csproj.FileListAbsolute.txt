@@ -1,0 +1,15 @@
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Application\obj\Debug\net6.0\maxiprod.Application.csproj.AssemblyReference.cache
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Application\obj\Debug\net6.0\maxiprod.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Application\obj\Debug\net6.0\maxiprod.Application.AssemblyInfoInputs.cache
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Application\obj\Debug\net6.0\maxiprod.Application.AssemblyInfo.cs
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Application\obj\Debug\net6.0\maxiprod.Application.csproj.CoreCompileInputs.cache
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Application\bin\Debug\net6.0\maxiprod.Application.deps.json
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Application\bin\Debug\net6.0\maxiprod.Application.dll
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Application\bin\Debug\net6.0\maxiprod.Application.pdb
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Application\bin\Debug\net6.0\maxiprod.Domain.dll
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Application\bin\Debug\net6.0\maxiprod.Domain.pdb
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Application\obj\Debug\net6.0\maxiprod.14B52723.Up2Date
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Application\obj\Debug\net6.0\maxiprod.Application.dll
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Application\obj\Debug\net6.0\refint\maxiprod.Application.dll
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Application\obj\Debug\net6.0\maxiprod.Application.pdb
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Application\obj\Debug\net6.0\ref\maxiprod.Application.dll

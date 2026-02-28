@@ -1,0 +1,11 @@
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Domain\bin\Debug\net6.0\maxiprod.Domain.deps.json
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Domain\bin\Debug\net6.0\maxiprod.Domain.dll
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Domain\bin\Debug\net6.0\maxiprod.Domain.pdb
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Domain\obj\Debug\net6.0\maxiprod.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Domain\obj\Debug\net6.0\maxiprod.Domain.AssemblyInfoInputs.cache
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Domain\obj\Debug\net6.0\maxiprod.Domain.AssemblyInfo.cs
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Domain\obj\Debug\net6.0\maxiprod.Domain.csproj.CoreCompileInputs.cache
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Domain\obj\Debug\net6.0\maxiprod.Domain.dll
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Domain\obj\Debug\net6.0\refint\maxiprod.Domain.dll
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Domain\obj\Debug\net6.0\maxiprod.Domain.pdb
+C:\Users\WesleyPanazzolo\Desktop\MaxProd\maxprod-backend\maxprod.Domain\obj\Debug\net6.0\ref\maxiprod.Domain.dll
