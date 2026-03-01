@@ -349,6 +349,16 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "maxiprod.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/maxiprod.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/maxiprod.Domain.dll": {}
+        }
       }
     }
   },
@@ -802,13 +812,19 @@
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "maxiprod.Domain/1.0.0": {
+      "type": "project",
+      "path": "../maxiprod.Domain/maxiprod.Domain.csproj",
+      "msbuildProject": "../maxiprod.Domain/maxiprod.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.EntityFrameworkCore.Design >= 6.0.36",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.36",
-      "Npgsql.EntityFrameworkCore.PostgreSQL >= 6.0.29"
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 6.0.29",
+      "maxiprod.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -843,7 +859,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\WesleyPanazzolo\\Desktop\\MaxiProd\\maxiprod-backend\\maxiprod.Domain\\maxiprod.Domain.csproj": {
+              "projectPath": "C:\\Users\\WesleyPanazzolo\\Desktop\\MaxiProd\\maxiprod-backend\\maxiprod.Domain\\maxiprod.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

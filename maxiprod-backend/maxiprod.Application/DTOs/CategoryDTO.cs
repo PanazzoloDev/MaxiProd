@@ -4,17 +4,17 @@
     {
         public int Id { get; set; }
         public string Description { get; set; }
-        public int Type { get; set; }
+        public int Purpose { get; set; }
     }
     public class CreateCategoryDTO
     {
         public string Description { get; set; }
-        public int Type { get; set; }
+        public int Purpose { get; set; }
     }
     public class UpdateCategoryDTO
     {
         public int Id { get; set; }
         public string? Description { get; set; }
-        public int? Type { get; set; }
+        public int? Purpose { get; set; }
     }
 }

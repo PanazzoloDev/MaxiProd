@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.36" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.1" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
@@ -14,8 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\maxprod.Application\maxiprod.Application.csproj" />
-    <ProjectReference Include="..\maxprod.Infra.Data\maxiprod.Infra.Data.csproj" />
+    <ProjectReference Include="..\maxiprod.Application\maxiprod.Application.csproj" />
+    <ProjectReference Include="..\maxiprod.Infra.Data\maxiprod.Infra.Data.csproj" />
   </ItemGroup>
 
 </Project>

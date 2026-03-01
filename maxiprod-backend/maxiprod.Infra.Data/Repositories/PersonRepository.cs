@@ -1,5 +1,6 @@
 ﻿using maxiprod.Domain.Entities;
 using maxiprod.Domain.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace maxiprod.Infra.Data.Repositories
 {
@@ -10,5 +11,13 @@ namespace maxiprod.Infra.Data.Repositories
         /// implementados aqui, além dos herdados da base
         /// </summary>
         public PersonRepository(Context.ApplicationContext context) : base(context){}
+
+        public async Task<IEnumerable<Person>> GetPeopleWithTransactionsAsync()
+        {
+            return await _dbSet
+                .AsNoTracking()
+                .Include(x => x.Transactions)
+                .ToListAsync();
+        }
     }
 }

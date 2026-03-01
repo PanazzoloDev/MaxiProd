@@ -1,4 +1,5 @@
-﻿using maxiprod.Application.DTOs;
+﻿using FluentResults;
+using maxiprod.Application.DTOs;
 
 namespace maxiprod.Application.Interfaces
 {

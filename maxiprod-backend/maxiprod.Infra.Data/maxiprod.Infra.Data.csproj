@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\maxprod.Domain\maxiprod.Domain.csproj" />
+    <ProjectReference Include="..\maxiprod.Domain\maxiprod.Domain.csproj" />
   </ItemGroup>
 
 </Project>

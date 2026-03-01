@@ -4,7 +4,7 @@
     {
         Task<T?> GetByIdAsync(int id);
 
-        Task<IEnumerable<T>> GetAllAsync();
+        IQueryable<T> GetAllAsync();
 
         Task<IEnumerable<T>> GetPagedAsync(int pageNumber, int sizeOfPage);
 

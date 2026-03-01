@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace maxiprod.WebUI.Controllers
 {
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class PersonController : ControllerBase
     {
         private readonly IPersonService _service;
@@ -15,12 +15,18 @@ namespace maxiprod.WebUI.Controllers
             _service = service;
         }
 
+        [HttpGet("financial-summary")]
+        public async Task<Result<FinancialSummaryResultDTO>> GetPaged(){
+            return await _service.GetFinancialSummaryAsync();
+        }
+
         [HttpGet]
         public async Task<Result<IEnumerable<ViewPersonDTO>>> GetPaged(
             int pageNumber = 1,
             int pageSize = 50
-        ){
-            return await _service.GetAllAsync();
+        )
+        {
+            return await _service.GetPagedAsync(pageNumber, pageSize);
         }
 
         [HttpGet("{id}")]
@@ -38,6 +44,9 @@ namespace maxiprod.WebUI.Controllers
         [HttpPut("{id}")]
         public async Task<Result<ViewPersonDTO>> Update(int id, [FromBody] UpdatePersonDTO model)
         {
+            if (id != model.Id)
+                return Result.Fail("O id fornecido na URL não é igual ao id do novo registro.");
+
             return await _service.UpdateAsync(id, model);
         }
 

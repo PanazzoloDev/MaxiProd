@@ -15,37 +15,39 @@ namespace maxiprod.Infra.Data.Repositories
             _dbSet = _context.Set<T>();
         }
 
-        public async Task<T> CreateAsync(T entity)
+        public virtual async Task<T> CreateAsync(T entity)
         {
             _dbSet.Add(entity);
             await _context.SaveChangesAsync();
             return entity;
         }
 
-        public async Task<bool> DeleteAsync(T entity)
+        public virtual async Task<bool> DeleteAsync(T entity)
         {
             _dbSet.Remove(entity);
             return await _context.SaveChangesAsync() > 0;
         }
 
-        public async Task<IEnumerable<T>> GetAllAsync()
+        public virtual IQueryable<T> GetAllAsync()
         {
-            return await _dbSet.ToListAsync();
+            return  _dbSet
+                .AsNoTracking()
+                .AsQueryable();
         }
 
-        public async Task<T?> GetByIdAsync(int id)
+        public virtual async Task<T?> GetByIdAsync(int id)
         {
             return await _dbSet.FindAsync(id);
         }
 
-        public async Task<T?> UpdateAsync(T entity)
+        public virtual async Task<T?> UpdateAsync(T entity)
         {
             _dbSet.Update(entity);
             await _context.SaveChangesAsync();
             return entity;
         }
 
-        public async Task<bool> DeleteByIdAsync(int id)
+        public virtual async Task<bool> DeleteByIdAsync(int id)
         {
             var entity = await _dbSet.FindAsync(id);
             //Early return 
@@ -55,7 +57,7 @@ namespace maxiprod.Infra.Data.Repositories
             return await _context.SaveChangesAsync() > 0;
         }
 
-        public async Task<IEnumerable<T>> GetPagedAsync(int pageNumber, int sizeOfPage)
+        public virtual async Task<IEnumerable<T>> GetPagedAsync(int pageNumber, int sizeOfPage)
         {
             int skip = (pageNumber - 1) * sizeOfPage;
             return await _dbSet

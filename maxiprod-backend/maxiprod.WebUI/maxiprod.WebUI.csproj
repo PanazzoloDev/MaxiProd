@@ -19,7 +19,7 @@
   </ItemGroup>
   
   <ItemGroup>
-    <ProjectReference Include="..\maxprod.Infra.IoC\maxiprod.Infra.IoC.csproj" />
+    <ProjectReference Include="..\maxiprod.Infra.IoC\maxiprod.Infra.IoC.csproj" />
   </ItemGroup>
 
 </Project>
