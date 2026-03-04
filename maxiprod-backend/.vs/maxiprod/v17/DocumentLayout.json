@@ -1,48 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\WesleyPanazzolo\\Desktop\\MaxiProd\\maxiprod-backend\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{C8410395-9B6C-CA78-6CB7-69040C218A38}|maxiprod.WebUI\\maxiprod.WebUI.csproj|c:\\users\\wesleypanazzolo\\desktop\\maxiprod\\maxiprod-backend\\maxiprod.webui\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C8410395-9B6C-CA78-6CB7-69040C218A38}|maxiprod.WebUI\\maxiprod.WebUI.csproj|solutionrelative:maxiprod.webui\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFA8C9BD-5BE9-A204-1854-B88FAAFD9251}|maxiprod.Application\\maxiprod.Application.csproj|c:\\users\\wesleypanazzolo\\desktop\\maxiprod\\maxiprod-backend\\maxiprod.application\\dtos\\financialsummaryresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFA8C9BD-5BE9-A204-1854-B88FAAFD9251}|maxiprod.Application\\maxiprod.Application.csproj|solutionrelative:maxiprod.application\\dtos\\financialsummaryresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFA8C9BD-5BE9-A204-1854-B88FAAFD9251}|maxiprod.Application\\maxiprod.Application.csproj|c:\\users\\wesleypanazzolo\\desktop\\maxiprod\\maxiprod-backend\\maxiprod.application\\services\\servicebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFA8C9BD-5BE9-A204-1854-B88FAAFD9251}|maxiprod.Application\\maxiprod.Application.csproj|solutionrelative:maxiprod.application\\services\\servicebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F038DAA1-965F-4620-99BE-2F7C50579DDB}|maxiprod.Infra.Data\\maxiprod.Infra.Data.csproj|c:\\users\\wesleypanazzolo\\desktop\\maxiprod\\maxiprod-backend\\maxiprod.infra.data\\repositories\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F038DAA1-965F-4620-99BE-2F7C50579DDB}|maxiprod.Infra.Data\\maxiprod.Infra.Data.csproj|solutionrelative:maxiprod.infra.data\\repositories\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8EC1ACF-ACD6-4CEA-8729-8761EEAF42FB}|maxiprod.Domain\\maxiprod.Domain.csproj|c:\\users\\wesleypanazzolo\\desktop\\maxiprod\\maxiprod-backend\\maxiprod.domain\\interfaces\\ipersonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8EC1ACF-ACD6-4CEA-8729-8761EEAF42FB}|maxiprod.Domain\\maxiprod.Domain.csproj|solutionrelative:maxiprod.domain\\interfaces\\ipersonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFA8C9BD-5BE9-A204-1854-B88FAAFD9251}|maxiprod.Application\\maxiprod.Application.csproj|c:\\users\\wesleypanazzolo\\desktop\\maxiprod\\maxiprod-backend\\maxiprod.application\\interfaces\\iservicebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFA8C9BD-5BE9-A204-1854-B88FAAFD9251}|maxiprod.Application\\maxiprod.Application.csproj|solutionrelative:maxiprod.application\\interfaces\\iservicebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFA8C9BD-5BE9-A204-1854-B88FAAFD9251}|maxiprod.Application\\maxiprod.Application.csproj|c:\\users\\wesleypanazzolo\\desktop\\maxiprod\\maxiprod-backend\\maxiprod.application\\services\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFA8C9BD-5BE9-A204-1854-B88FAAFD9251}|maxiprod.Application\\maxiprod.Application.csproj|solutionrelative:maxiprod.application\\services\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFA8C9BD-5BE9-A204-1854-B88FAAFD9251}|maxiprod.Application\\maxiprod.Application.csproj|c:\\users\\wesleypanazzolo\\desktop\\maxiprod\\maxiprod-backend\\maxiprod.application\\interfaces\\ipersonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFA8C9BD-5BE9-A204-1854-B88FAAFD9251}|maxiprod.Application\\maxiprod.Application.csproj|solutionrelative:maxiprod.application\\interfaces\\ipersonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D07BE291-2284-4A66-9603-93FAAC16ECA0}|maxiprod.Infra.IoC\\maxiprod.Infra.IoC.csproj|c:\\users\\wesleypanazzolo\\desktop\\maxiprod\\maxiprod-backend\\maxiprod.infra.ioc\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D07BE291-2284-4A66-9603-93FAAC16ECA0}|maxiprod.Infra.IoC\\maxiprod.Infra.IoC.csproj|solutionrelative:maxiprod.infra.ioc\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C8410395-9B6C-CA78-6CB7-69040C218A38}|maxiprod.WebUI\\maxiprod.WebUI.csproj|c:\\users\\wesleypanazzolo\\desktop\\maxiprod\\maxiprod-backend\\maxiprod.webui\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C8410395-9B6C-CA78-6CB7-69040C218A38}|maxiprod.WebUI\\maxiprod.WebUI.csproj|solutionrelative:maxiprod.webui\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -50,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -63,134 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PersonController.cs",
-              "DocumentMoniker": "C:\\Users\\WesleyPanazzolo\\Desktop\\MaxiProd\\maxiprod-backend\\maxiprod.WebUI\\Controllers\\PersonController.cs",
-              "RelativeDocumentMoniker": "maxiprod.WebUI\\Controllers\\PersonController.cs",
-              "ToolTip": "C:\\Users\\WesleyPanazzolo\\Desktop\\MaxiProd\\maxiprod-backend\\maxiprod.WebUI\\Controllers\\PersonController.cs",
-              "RelativeToolTip": "maxiprod.WebUI\\Controllers\\PersonController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T22:20:55.577Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IPersonService.cs",
-              "DocumentMoniker": "C:\\Users\\WesleyPanazzolo\\Desktop\\MaxiProd\\maxiprod-backend\\maxiprod.Application\\Interfaces\\IPersonService.cs",
-              "RelativeDocumentMoniker": "maxiprod.Application\\Interfaces\\IPersonService.cs",
-              "ToolTip": "C:\\Users\\WesleyPanazzolo\\Desktop\\MaxiProd\\maxiprod-backend\\maxiprod.Application\\Interfaces\\IPersonService.cs",
-              "RelativeToolTip": "maxiprod.Application\\Interfaces\\IPersonService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T22:19:10.517Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FinancialSummaryResultDTO.cs",
-              "DocumentMoniker": "C:\\Users\\WesleyPanazzolo\\Desktop\\MaxiProd\\maxiprod-backend\\maxiprod.Application\\DTOs\\FinancialSummaryResultDTO.cs",
-              "RelativeDocumentMoniker": "maxiprod.Application\\DTOs\\FinancialSummaryResultDTO.cs",
-              "ToolTip": "C:\\Users\\WesleyPanazzolo\\Desktop\\MaxiProd\\maxiprod-backend\\maxiprod.Application\\DTOs\\FinancialSummaryResultDTO.cs",
-              "RelativeToolTip": "maxiprod.Application\\DTOs\\FinancialSummaryResultDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T22:17:06.137Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ServiceBase.cs",
-              "DocumentMoniker": "C:\\Users\\WesleyPanazzolo\\Desktop\\MaxiProd\\maxiprod-backend\\maxiprod.Application\\Services\\ServiceBase.cs",
-              "RelativeDocumentMoniker": "maxiprod.Application\\Services\\ServiceBase.cs",
-              "ToolTip": "C:\\Users\\WesleyPanazzolo\\Desktop\\MaxiProd\\maxiprod-backend\\maxiprod.Application\\Services\\ServiceBase.cs",
-              "RelativeToolTip": "maxiprod.Application\\Services\\ServiceBase.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAcwFkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T22:13:57.704Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PersonRepository.cs",
-              "DocumentMoniker": "C:\\Users\\WesleyPanazzolo\\Desktop\\MaxiProd\\maxiprod-backend\\maxiprod.Infra.Data\\Repositories\\PersonRepository.cs",
-              "RelativeDocumentMoniker": "maxiprod.Infra.Data\\Repositories\\PersonRepository.cs",
-              "ToolTip": "C:\\Users\\WesleyPanazzolo\\Desktop\\MaxiProd\\maxiprod-backend\\maxiprod.Infra.Data\\Repositories\\PersonRepository.cs",
-              "RelativeToolTip": "maxiprod.Infra.Data\\Repositories\\PersonRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T22:02:25.51Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IPersonRepository.cs",
-              "DocumentMoniker": "C:\\Users\\WesleyPanazzolo\\Desktop\\MaxiProd\\maxiprod-backend\\maxiprod.Domain\\Interfaces\\IPersonRepository.cs",
-              "RelativeDocumentMoniker": "maxiprod.Domain\\Interfaces\\IPersonRepository.cs",
-              "ToolTip": "C:\\Users\\WesleyPanazzolo\\Desktop\\MaxiProd\\maxiprod-backend\\maxiprod.Domain\\Interfaces\\IPersonRepository.cs",
-              "RelativeToolTip": "maxiprod.Domain\\Interfaces\\IPersonRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T22:01:40.23Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IServiceBase.cs",
-              "DocumentMoniker": "C:\\Users\\WesleyPanazzolo\\Desktop\\MaxiProd\\maxiprod-backend\\maxiprod.Application\\Interfaces\\IServiceBase.cs",
-              "RelativeDocumentMoniker": "maxiprod.Application\\Interfaces\\IServiceBase.cs",
-              "ToolTip": "C:\\Users\\WesleyPanazzolo\\Desktop\\MaxiProd\\maxiprod-backend\\maxiprod.Application\\Interfaces\\IServiceBase.cs",
-              "RelativeToolTip": "maxiprod.Application\\Interfaces\\IServiceBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T21:47:35.569Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PersonService.cs",
-              "DocumentMoniker": "C:\\Users\\WesleyPanazzolo\\Desktop\\MaxiProd\\maxiprod-backend\\maxiprod.Application\\Services\\PersonService.cs",
-              "RelativeDocumentMoniker": "maxiprod.Application\\Services\\PersonService.cs",
-              "ToolTip": "C:\\Users\\WesleyPanazzolo\\Desktop\\MaxiProd\\maxiprod-backend\\maxiprod.Application\\Services\\PersonService.cs",
-              "RelativeToolTip": "maxiprod.Application\\Services\\PersonService.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAMwDMAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T21:06:27.707Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "C:\\Users\\WesleyPanazzolo\\Desktop\\MaxiProd\\maxiprod-backend\\maxiprod.Infra.IoC\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "maxiprod.Infra.IoC\\DependencyInjection.cs",
-              "ToolTip": "C:\\Users\\WesleyPanazzolo\\Desktop\\MaxiProd\\maxiprod-backend\\maxiprod.Infra.IoC\\DependencyInjection.cs",
-              "RelativeToolTip": "maxiprod.Infra.IoC\\DependencyInjection.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABUAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T20:45:54.375Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TransactionController.cs",
-              "DocumentMoniker": "C:\\Users\\WesleyPanazzolo\\Desktop\\MaxiProd\\maxiprod-backend\\maxiprod.WebUI\\Controllers\\TransactionController.cs",
-              "RelativeDocumentMoniker": "maxiprod.WebUI\\Controllers\\TransactionController.cs",
-              "ToolTip": "C:\\Users\\WesleyPanazzolo\\Desktop\\MaxiProd\\maxiprod-backend\\maxiprod.WebUI\\Controllers\\TransactionController.cs",
-              "RelativeToolTip": "maxiprod.WebUI\\Controllers\\TransactionController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T20:45:19.034Z"
             }
           ]
         },
