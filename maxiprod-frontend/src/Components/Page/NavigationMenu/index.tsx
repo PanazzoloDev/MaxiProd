@@ -16,7 +16,7 @@ const drawerWidth = 240;
 
 type navItemType = {
     id: string,
-    route: string,
+    route: string | undefined,
     text: string,
     icon: JSX.Element,
     children: navItemType[]
@@ -36,9 +36,10 @@ const navItems: navItemType[] = [
         id: '1',
         text: 'Pessoas',
         icon: <People />,
-        route: '/people',
+        route: undefined,
         children: [
-            { id: '2', route: '/financial-summary', text: 'Resumo Financeiro', icon: <People />, roles: [], children: [] },
+            { id: '2', route: '/people', text: 'Pessoas', icon: <People />, roles: [], children: [] },
+            { id: '3', route: '/financial-summary', text: 'Resumo', icon: <People />, roles: [], children: [] },
         ],
         roles: []
     }
@@ -66,9 +67,10 @@ const specialNavItems: navItemType[] = [
 
 const NavigationMenu = () => {
 
-    const OnClickItem = (route: string) => {
+    const OnClickItem = (route: string | undefined) => {
+
         const navigate = useNavigate();
-        return () => navigate(route);
+        return () => route ? navigate(route) : () =>{};
     };
 
     return (

@@ -13,7 +13,7 @@ const ImageContainer = styled.div`
     box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
 `
 
-const GreetingContainer = styled.h2`
+const GreetingContainer = styled.h1`
     color: ${secondary};
     font-size: 32px;
     text-shadow: 4px 4px 5px rgba(0,0,0,0.3);
