@@ -1,6 +1,6 @@
 import { get, isEmpty } from "lodash";
 import { action, observable } from "mobx";
-import type{ BaseDatagridStoreType, FilterType, columnDatagridType, responseType } from "../../Commons/types";
+import type { BaseDatagridStoreType, FilterType, columnDatagridType, responseType } from "../../Commons/types";
 import { Post } from "../../Services/BaseAPI";
 
 class BaseDatagridStore {
@@ -21,12 +21,12 @@ class BaseDatagridStore {
         pageSize: number,
         pageNumber: number,
         search: string = '',
-        defaultFilters : Array<FilterType> = [],
+        defaultFilters: Array<FilterType> = [],
         customFilters: Array<FilterType> = []
     ): Promise<void | responseType | Error> => {
-        const filters = !isEmpty(customFilters) ? customFilters :  new Array<FilterType>()
+        const filters = !isEmpty(customFilters) ? customFilters : new Array<FilterType>()
 
-        if(!isEmpty(defaultFilters)){
+        if (!isEmpty(defaultFilters)) {
             defaultFilters.map(defaultFilter => {
                 filters.push(defaultFilter)
             })
@@ -35,7 +35,7 @@ class BaseDatagridStore {
         if (!isEmpty(search)) {
             this.columns.forEach(column => {
                 if (column.filter && this.verifySearch(search, column.type)) {
-                    filters.push({ 
+                    filters.push({
                         Field: column.accessor,
                         Operation: column.filter,
                         Value: search,

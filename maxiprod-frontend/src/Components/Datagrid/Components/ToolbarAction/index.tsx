@@ -1,4 +1,4 @@
-import { actionType } from "../../../../Commons/types";
+import type{ actionType } from "../../../../Commons/types";
 import { ActionButton } from "./style";
 
 

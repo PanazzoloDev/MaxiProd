@@ -1,7 +1,7 @@
 import BaseStore from "../../../Components/Stores/BaseStore";
 import { Create, Read, Remove, Update } from "../../../Services/PeopleService";
 
-class FormUsersStore extends BaseStore {
+class FormPeopleStore extends BaseStore {
     constructor() {
         super(
             {
@@ -28,5 +28,5 @@ class FormUsersStore extends BaseStore {
         );
     }
 }
-const store = new FormUsersStore();
+const store = new FormPeopleStore();
 export default store;

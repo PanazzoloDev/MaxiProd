@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable no-prototype-builtins */
 import { cloneDeep, get, isEmpty, isFunction, toNumber } from 'lodash';
-import { action, observable } from 'mobx';
+import { action, observable } from "mobx"
 import type { Controls, typeControl } from '../../Commons/types';
 
 interface Result {
@@ -50,12 +50,10 @@ class BaseStore {
         })
 
     }
-
     @action
     setStoreMode = (mode: 'Create' | 'Update' | 'Delete' | 'Read') => {
         this.storeMode = mode;
     }
-
     @action
     submit = async (mode?: 'Create' | 'Update' | 'Delete' | 'Read', id?: number) => {
         const controls = await this.convertControlsToFormat(this.controls);
@@ -90,13 +88,12 @@ class BaseStore {
             }
         })
     }
-
     @action
     resetStore = () => {
         this.controls = cloneDeep(this.backupControls);
         this.storeMode = 'Create'
     }
-
+    @action
     convertControlsToFormat = (controls: { [key: string]: any }): Promise<object> => {
         return new Promise((resolve) => {
             const convertedControls: { [key: string]: any } = {};

@@ -6,20 +6,12 @@ import FormPeopleModal from "../Modals/FormPeopleModal"
 import datagridStore from "../Stores/DatagridPeopleStore"
 import formStore from "../Stores/FormPeopleStore"
 
-import PDFReport from "../../../Components/Reports"
+//import PDFReport from "../../../Components/Reports"
+import type { actionType } from "../../../Commons/types"
 
 const DatagridContainer = observer(() => {
 
-    const toolbarActions = [
-        {
-            key: 1,
-            component: () => <PDFReport
-                orientation="landscape"
-                reportTitle="Pessoas"
-                store={datagridStore}
-            />
-        },
-    ];
+    const toolbarActions:actionType[] = [];
 
     const rowActions = [
         {

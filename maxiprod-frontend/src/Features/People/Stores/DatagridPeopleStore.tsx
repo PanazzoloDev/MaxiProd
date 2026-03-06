@@ -1,6 +1,6 @@
 import BaseDatagridStore from "../../../Components/Stores/BaseDatagridStore";
 
-class DatagridUsersStore extends BaseDatagridStore {
+class DatagridPeopleStore extends BaseDatagridStore {
     constructor() {
         super({
             data: [],
@@ -27,5 +27,5 @@ class DatagridUsersStore extends BaseDatagridStore {
     }
 }
 
-const store = new DatagridUsersStore();
+const store = new DatagridPeopleStore();
 export default store;

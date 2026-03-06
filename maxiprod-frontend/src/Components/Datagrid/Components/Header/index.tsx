@@ -1,4 +1,4 @@
-import { columnDatagridType } from "../../../../Commons/types"
+import type{ columnDatagridType } from "../../../../Commons/types"
 import { HeaderCell, TableHeader } from "./style"
 
 type headerProps = {
