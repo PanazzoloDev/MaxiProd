@@ -4,6 +4,8 @@ import { primary, secondary } from "../../../../Commons/colors";
 const RowActionContainer = styled.button<{ children: React.ReactNode }>`
     border: none;
     padding: 1px;
+    display:inline-flex;
+    flex-direction: column;
     vertical-align: middle;
     text-align: center;
     margin-right: 10px;

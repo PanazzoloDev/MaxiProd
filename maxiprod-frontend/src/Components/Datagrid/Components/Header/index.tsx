@@ -23,7 +23,7 @@ const Header = (props: headerProps) => {
             {actionColumnCount && actionColumnCount > 0 ?
                 <HeaderCell
                     key={999}
-                    width={actionColumnCount * 11}
+                    width={actionColumnCount * 10}
                 >
                     {actionColumnCount > 1 ? 'Ações': ''}
                 </HeaderCell>

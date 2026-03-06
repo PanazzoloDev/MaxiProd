@@ -15,6 +15,7 @@ import ToolbarAction from "./Components/ToolbarAction";
 import {
     DatagridContainer,
     Table,
+    TableWrap,
     ToolbarContainer
 } from "./style";
 
@@ -123,7 +124,7 @@ const Datagrid = forwardRef((props: datagridContainerProps, ref) => {
     return (
         <DatagridContainer inputContent={inputContent}>
             <ToolbarContainer>
-                <div style={{ display: 'flex', flexDirection: 'row', height: 'fit-content' }}>
+                <div style={{ display: 'flex', flexDirection: 'row', height: '40px', verticalAlign :'center' }}>
                     {toolbarActions.map(act =>
                         <ToolbarAction
                             key={act.key}
@@ -131,7 +132,7 @@ const Datagrid = forwardRef((props: datagridContainerProps, ref) => {
                         />
                     )}
                 </div>
-                <div style={{ display: 'flex', flexDirection: 'row', height: 'fit-content' }}>
+                <div style={{ display: 'flex', flexDirection: 'row',  height: '40px', verticalAlign :'center'  }}>
                     {
                         customFilters.map(filter =>
                             <Chip
@@ -163,35 +164,29 @@ const Datagrid = forwardRef((props: datagridContainerProps, ref) => {
                     />
                 </div>
             </ToolbarContainer>
-            <Table>
-                <thead style={{
-                    display: 'table',
-                    width: '100%',
-                    tableLayout: 'fixed'
-                }}>
-                    <Header
-                        columns={store.columns}
-                        actionColumnCount={props.rowActions?.length}
-                    />
-                </thead>
-                {loaded && (
-                    <tbody style={{
-                        display: 'block',
-                        height: inputContent ? '30vh' : '60vh',
-                        overflowY: 'auto',
-                    }}>
-                        {store.data.map(object =>
-                            <Row
-                                key={get(object, 'id')}
-                                object={object}
-                                columns={store.columns}
-                                rowActions={rowActions}
-                                onSelectRow={props.onSelectItem}
-                            />
-                        )}
-                    </tbody>
-                )}
-            </Table>
+            <TableWrap>
+                <Table style={{tableLayout: 'fixed'}}>
+                    <thead>
+                        <Header
+                            columns={store.columns}
+                            actionColumnCount={props.rowActions?.length}
+                        />
+                    </thead>
+                    {loaded && (
+                        <tbody>
+                            {store.data.map(object =>
+                                <Row
+                                    key={get(object, 'id')}
+                                    object={object}
+                                    columns={store.columns}
+                                    rowActions={rowActions}
+                                    onSelectRow={props.onSelectItem}
+                                />
+                            )}
+                        </tbody>
+                    )}
+                </Table>
+            </TableWrap>
             <PaginationControl
                 onSearch={fetchData}
                 pageSize={pageSize}

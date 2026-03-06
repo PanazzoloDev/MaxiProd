@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { primary, secondary } from "../../../../Commons/colors";
 
 const RowContainer = styled.tr<{ children: React.ReactNode }>`
-    display: table;
+    //display: table;
     width: 100%;
-    table-layout: fixed;
+    //table-layout: fixed;
     color: ${primary};
     height: 2em;
     &:hover{
@@ -26,6 +26,7 @@ const CellContainer = styled.td<cellProps>`
     text-align: ${($props) => $props.alignment ?? 'left'};
     width: ${($props) => $props.width ? `${$props.width}px`:'auto'};
     vertical-align: middle;
+    height: 2em;
 `
 
 export {

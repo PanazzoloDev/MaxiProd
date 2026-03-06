@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace maxiprod.WebUI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/people")]
     public class PersonController : ControllerBase
     {
         private readonly IPersonService _service;
@@ -15,12 +15,12 @@ namespace maxiprod.WebUI.Controllers
             _service = service;
         }
 
-        [HttpGet("financial-summary")]
+        [HttpPost("financial-summary")]
         public async Task<Result<FinancialSummaryResultDTO>> GetPaged(){
             return await _service.GetFinancialSummaryAsync();
         }
 
-        [HttpGet]
+        [HttpPost("query")]
         public async Task<Result<IEnumerable<ViewPersonDTO>>> GetPaged(
             int pageNumber = 1,
             int pageSize = 50

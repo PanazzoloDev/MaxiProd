@@ -15,7 +15,7 @@ namespace maxiprod.WebUI.Controllers
             _service = service;
         }
 
-        [HttpGet]
+        [HttpPost("query")]
         public async Task<Result<IEnumerable<ViewTransactionDTO>>> GetPaged(
             int pageNumber = 1,
             int pageSize = 50

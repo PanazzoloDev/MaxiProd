@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 import type { responseType } from "../../Commons/types";
 
 export const API = axios.create({
-  baseURL: 'https://localhost:7282'
+  baseURL: 'https://localhost:7058/api'
 });
 
 
@@ -29,14 +29,14 @@ export const handleRequest = (response?: AxiosResponse | Error, method: '' | 'po
     }
 
     // Verifica se houve um erro na resposta da requisição
-    if (!response || ![200, 201].includes(response.data.statusCode)) {
+    if (!response || ![200, 201].includes(response.status)) {
       const errorMessage = response ? response.data.message || 'Erro na requisição.' : 'Erro na requisição.';
       toast.error(errorMessage)
       resolve(new Error(errorMessage));
       return;
     }
 
-    if (['put', 'delete'].includes(method) || method == 'post' && response.data.statusCode == 201) {
+    if (['put', 'delete'].includes(method) || method == 'post' && response.status == 201) {
       const messageDictionary = { post: 'criado', put: 'atualizado', delete: 'excluído' }
       if (method !== '')
         toast.success(`Registro ${messageDictionary[method]} com sucesso`);

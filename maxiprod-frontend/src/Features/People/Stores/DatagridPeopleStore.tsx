@@ -4,7 +4,7 @@ class DatagridPeopleStore extends BaseDatagridStore {
     constructor() {
         super({
             data: [],
-            endpoint: '/people',
+            endpoint: '/people/query',
             columns: [
                 {
                     header: 'Idade',

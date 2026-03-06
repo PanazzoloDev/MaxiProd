@@ -2,12 +2,14 @@ import styled from "styled-components";
 import { primary, secondary } from "../../../../Commons/colors";
 
 const TableHeader = styled.tr<{ children: React.ReactNode }>`
+    position: sticky;
+    top: 0;
     background-color: ${primary};
     font-weight: bold;
     text-align: center;
     vertical-align: middle;
     color: ${secondary};
-    height: 2em;
+
 `
 type headerCellProps = {
     children: React.ReactNode,
