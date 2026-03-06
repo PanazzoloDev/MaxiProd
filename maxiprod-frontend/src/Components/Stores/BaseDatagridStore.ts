@@ -1,7 +1,7 @@
 import { get, isEmpty } from "lodash";
 import { action, observable } from "mobx";
 import type{ BaseDatagridStoreType, FilterType, columnDatagridType, responseType } from "../../Commons/types";
-import { Post } from "../../Services/BaseAPI/index.ts";
+import { Post } from "../../Services/BaseAPI";
 
 class BaseDatagridStore {
     @observable columns: columnDatagridType[];

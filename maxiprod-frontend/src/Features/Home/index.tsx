@@ -17,9 +17,9 @@ const HomePage = (): React.ReactNode => {
         <Page>
             <HomeContainer>
                 <GreetingContainer>
-                    {greeting}! <br/>
-                    bem vindo aos controle financeiro familiar<br/>
-                    HomeControl
+                    {greeting}! <br/><br/>
+                    Bem vindo ao controle financeiro familiar<br/>
+                    Home Control
                 </GreetingContainer>
             </HomeContainer>        
         </Page>

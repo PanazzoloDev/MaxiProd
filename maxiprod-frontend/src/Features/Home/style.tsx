@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { primary, secondary } from "../../Commons/colors";
 
 const HomeContainer = styled.div`
+    margin-top:40px;
     display: flex;
     flex-direction: column;
     text-align: center;

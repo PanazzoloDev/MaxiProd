@@ -1,5 +1,5 @@
 
-import { ChangeEvent, KeyboardEvent } from "react"
+import type { ChangeEvent, KeyboardEvent } from "react"
 import NumberInput from "../../../Inputs/NumberInput"
 import { PaginationContainer } from "./style"
 import { toNumber } from "lodash"
