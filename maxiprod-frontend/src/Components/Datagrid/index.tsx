@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/immutability */
 import { get, isEmpty, toString } from "lodash";
-import { forwardRef, useEffect, useImperativeHandle, useState, type JSX } from 'react';
+import { forwardRef, useEffect, useImperativeHandle, useState, type ForwardedRef, type JSX } from 'react';
 import type { FilterType, actionType } from "../../Commons/types";
 import { useDialogContext } from "../../Contexts/DialogContext";
 import { Filter } from "../Icons";
@@ -19,6 +19,11 @@ import {
     ToolbarContainer
 } from "./style";
 
+export type DatagridRef = {
+  fetchData: () => void
+  getFilters: () => string
+}
+
 type datagridContainerProps = {
     store: BaseDatagridStore,
     formFilterStore?: BaseStore,
@@ -31,7 +36,7 @@ type datagridContainerProps = {
     noInitalFetch?: boolean
 }
 
-const Datagrid = forwardRef((props: datagridContainerProps, ref) => {
+const Datagrid = forwardRef((props: datagridContainerProps, ref: ForwardedRef<DatagridRef>) => {
     const [pageSize, setPageSize] = useState(50);
     const [pageNumber, setPageNumber] = useState(1);
     const [searchText, setSearchText] = useState('');
@@ -155,7 +160,7 @@ const Datagrid = forwardRef((props: datagridContainerProps, ref) => {
                         <ToolbarAction
                             key={1}
                             component={() => <Filter onClick={handleOpenFilterModal} />}
-                        /> : <div />
+                        /> : <></>
                     }
                     <SearchInput
                         inputContent={inputContent}

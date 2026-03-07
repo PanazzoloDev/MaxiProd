@@ -76,7 +76,7 @@ class BaseStore {
                     if (isFunction(this.get)) {
                         resolve(this.get(id ? id : toNumber(get(controls, 'id', 0)))
                             .then((result: Result) => {
-                                const resultData = get(result, 'data.data', {})
+                                const resultData = get(result, 'data.value', {})
                                 Object.keys(this.controls).forEach(key =>
                                     this.controls[key].value = get(resultData, key)
                                 )

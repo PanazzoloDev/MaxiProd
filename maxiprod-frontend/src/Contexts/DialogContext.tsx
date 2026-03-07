@@ -3,7 +3,6 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogTitle from "@mui/material/DialogTitle";
 import React, { useContext, useState, createContext } from "react";
-import Draggable from "react-draggable";
 import { primary, secondary } from "../Commons/colors";
 import type { DialogWidthType, EmptyFunctionType } from "../Commons/types";
 import StandardButton from "../Components/Buttons/StandardButton";
@@ -30,14 +29,7 @@ interface PropTypes {
     children: React.ReactNode;
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const PaperComponent = (props: any) => {
-    return (
-        <Draggable handle=".draggable-dialog-title" cancel={'[class*="MuiDialogContent-root"]'}>
-            <div {...props} />
-        </Draggable>
-    );
-};
+
 
 const DialogProvider: React.FC<PropTypes> = ({ children }) => {
     const [dialogs, setDialogs] = useState<DialogState[]>([]);
@@ -73,10 +65,8 @@ const DialogProvider: React.FC<PropTypes> = ({ children }) => {
                         e.preventDefault();
                         dialog.okCallback();
                     }}
-                    PaperComponent={PaperComponent}
                 >
                     <DialogTitle
-                        className="draggable-dialog-title"
                         style={{ backgroundColor: primary, color: secondary, cursor: 'move' }}
                         fontSize="20px"
                         component="h1"

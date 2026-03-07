@@ -2,42 +2,45 @@ import { get } from "lodash";
 import { observer } from "mobx-react";
 import { Create, Update } from "../../../Components/Icons";
 import { useDialogContext } from "../../../Contexts/DialogContext";
-import FormUsersContainer from "../Containers/FormModalContainer";
+import FormsPeopleContainer from "../Containers/FormModalContainer";
 import store from "../Stores/FormPeopleStore";
 
-type FormUserModalProps = {
+type FormPeopleModalProps = {
+  onSuccess?: () => void;
   object?: object;
   type?: 'Create' | 'Update'
 }
 
-const FormUsersModal = observer((props: FormUserModalProps) => {
+const FormToolsModal = observer((props: FormPeopleModalProps) => {
   const { openDialog, closeDialog } = useDialogContext();
-
+  
   const handleOpenModal = async () => {
-    if (props.object && props.type === "Update") {
+    if (props.type === "Update") {
+      store.setStoreMode("Update");
       await store.submit('Read', get(props.object, 'id'));
       OpenModal("Editar");
     } else {
-      OpenModal("Novo");
+      OpenModal("Nova");
     }
   };
 
-  const OpenModal = (mode: 'Editar' | 'Novo') => {
+  const OpenModal = (mode: 'Editar' | 'Nova') => {
     openDialog({
-      component: <FormUsersContainer />,
-      title: `${mode} usuário`,
+      component: <FormsPeopleContainer object={props.object}/>,
+      title: `${mode} pessoa`,
       okCallback: handleSubmit,
       cancelCallback: handleCloseModal,
-      width: "xl",
       okText: "Confirmar",
       cancelText: "Cancelar",
-      isOpen: true
+      isOpen: true,
     });
   }
 
   const handleSubmit = () => {
-    store.submit(props.type)
-    handleCloseModal()
+    store.submit(props.type).then(() => {
+      handleCloseModal()
+      if(props.onSuccess) props.onSuccess()
+    })
   }
 
   const handleCloseModal = () => {
@@ -52,4 +55,4 @@ const FormUsersModal = observer((props: FormUserModalProps) => {
   );
 });
 
-export default FormUsersModal;
+export default FormToolsModal;

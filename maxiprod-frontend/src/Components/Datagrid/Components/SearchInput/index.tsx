@@ -1,7 +1,7 @@
 import SearchIcon from '@mui/icons-material/Search';
 import { IconButton, InputAdornment, TextField } from '@mui/material';
 import { isFunction } from 'lodash';
-import { ChangeEvent, KeyboardEvent } from 'react';
+import type{ ChangeEvent, KeyboardEvent } from 'react';
 import { SearchInputContainer } from './styled';
 
 type searchInputProps = {
