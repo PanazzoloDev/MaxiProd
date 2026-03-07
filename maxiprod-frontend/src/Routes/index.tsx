@@ -8,6 +8,7 @@ import { DialogProvider } from '../Contexts/DialogContext';
 import HomePage from '../Features/Home';
 //import ProfilePage from '../Features/Profile';
 import PeoplePage from '../Features/People';
+import TransactionPage from '../Features/Transactions';
 
 const AppRoute = () => {
     return (
@@ -17,6 +18,7 @@ const AppRoute = () => {
                     <Route path="/" element={<HomePage />} />
                     <Route path="/home" element={<HomePage />} />
 
+                    <Route path="/transactions" element={<TransactionPage />} />
                     <Route path="/people" element={<PeoplePage />} />
                     {/*<Route path="/settings" element={<ParametersScreen />} />
 

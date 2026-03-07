@@ -2,9 +2,9 @@ import { observer } from "mobx-react"
 import Datagrid, { type DatagridRef } from "../../../Components/Datagrid"
 
 import ConfirmDeleteFormModal from "../../../Components/Page/ConfirmDeleteFormModal"
-import FormPeopleModal from "../Modals/FormPeopleModal"
-import datagridStore from "../Stores/DatagridPeopleStore"
-import formStore from "../Stores/FormPeopleStore"
+import FormTransactionModal from "../Modals/FormTransactionModal"
+import datagridStore from "../Stores/DatagridTransactionStore"
+import formStore from "../Stores/FormTransactionStore"
 
 import { useRef } from "react"
 import PDFReport from "../../../Components/Reports"
@@ -22,7 +22,7 @@ const DatagridContainer = observer(() => {
     const toolbarActions = [
         {
             key: 1,
-            component: () => <FormPeopleModal
+            component: () => <FormTransactionModal
                 type="Create"
                 onSuccess={onSuccess}
             />
@@ -30,8 +30,8 @@ const DatagridContainer = observer(() => {
         {
             key: 2,
             component: () => <PDFReport
-                orientation="portrait"
-                reportTitle="Pessoas"
+                orientation="landscape"
+                reportTitle="Transações"
                 store={datagridStore}
             />
         },
@@ -41,7 +41,7 @@ const DatagridContainer = observer(() => {
         {
             key: 3,
             component: (obj?: object) =>
-                <FormPeopleModal
+                <FormTransactionModal
                     onSuccess={onSuccess}
                     object={obj}
                     type="Update"
@@ -53,7 +53,7 @@ const DatagridContainer = observer(() => {
                 <ConfirmDeleteFormModal
                     store={formStore}
                     onSuccess={onSuccess}
-                    objectType="pessoa"
+                    objectType="transação"
                     object={obj}
                 />
         },

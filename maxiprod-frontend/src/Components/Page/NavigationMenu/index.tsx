@@ -6,7 +6,7 @@ import List from '@mui/material/List';
 import { SimpleTreeView, TreeItem } from '@mui/x-tree-view/';
 import { useNavigate } from 'react-router-dom';
 import { primary } from '../../../Commons/colors';
-import { Home, People, Settings } from '../../Icons';
+import { Categories, Home, People, Registers, Settings, Transactions } from '../../Icons';
 
 import type { JSX } from 'react';
 import TopBar from '../TopBar';
@@ -33,27 +33,30 @@ const navItems: navItemType[] = [
         roles: []
     },
     {
-        id: '1',
-        text: 'Pessoas',
+        id: '10',
+        text: 'Cadastros',
+        icon: <Registers />,
+        route: undefined,
+        children: [
+            { id: '20', route: '/people', text: 'Pessoas', icon: <People />, roles: [], children: [] },
+            { id: '30', route: '/transactions', text: 'Transações', icon: <Transactions />, roles: [], children: [] },
+            { id: '40', route: '/categories', text: 'Categorias', icon: <Categories />, roles: [], children: [] },
+        ],
+        roles: []
+    },
+    {
+        id: '50',
+        text: 'Financeiro',
         icon: <People />,
         route: undefined,
         children: [
-            { id: '2', route: '/people', text: 'Pessoas', icon: <People />, roles: [], children: [] },
-            { id: '3', route: '/financial-summary', text: 'Resumo', icon: <People />, roles: [], children: [] },
+            { id: '60', route: '/financial-summary', text: 'Resumo', icon: <People />, roles: [], children: [] },
         ],
         roles: []
     }
 ];
 
 const specialNavItems: navItemType[] = [
-    {
-        id: '13',
-        text: 'Pessoas',
-        route: '/users',
-        icon: <People />,
-        children: [],
-        roles: []
-    },
     {
         id: '14',
         text: 'Parâmetros',
@@ -70,7 +73,7 @@ const NavigationMenu = () => {
     const OnClickItem = (route: string | undefined) => {
 
         const navigate = useNavigate();
-        return () => route ? navigate(route) : () =>{};
+        return () => route ? navigate(route) : () => { };
     };
 
     return (

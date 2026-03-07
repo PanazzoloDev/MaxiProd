@@ -7,7 +7,9 @@
         public double Amount { get; set; }
         public int Type { get; set; }
         public int PersonId { get; set; }
+        public ViewPersonDTO Person { get; set; }
         public int CategoryId { get; set; }
+        public ViewCategoryDTO Category { get; set; }
     }
     public class CreateTransactionDTO
     {

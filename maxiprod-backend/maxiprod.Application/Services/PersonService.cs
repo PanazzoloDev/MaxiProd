@@ -74,6 +74,9 @@ namespace maxiprod.Application.Services
 
             try
             {
+                if (HasRevenueTransaction(model.Id) == true)
+                    return Result.Fail("Existem transações de receitas");
+
                 model.Update(view.Name, view.Age);
 
                 await _repository.UpdateAsync(model);
@@ -83,6 +86,20 @@ namespace maxiprod.Application.Services
             {
                 return Result.Fail(ex.Message);
             }
+        }
+
+        /// <summary>
+        /// Se caso for necessário reduzir a idade, não deve
+        /// existir transações do tipo receita cadastrada.
+        /// </summary>
+        /// <param name="personId"></param>
+        /// <returns>bool?</returns>
+        private bool? HasRevenueTransaction(int personId)
+        {
+            return _repository.GetAllAsync()
+                .FirstOrDefault(p => p.Id == personId)?
+                .Transactions
+                .Any(t => t.Type == Domain.Enums.TransactionTypeEnum.Revenue);
         }
     }
 }

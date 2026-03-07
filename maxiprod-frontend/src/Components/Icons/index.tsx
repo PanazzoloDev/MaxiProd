@@ -1,4 +1,6 @@
 import {
+    Menu as Cadastros,
+    ClearAll as Categorias,
     Settings as Configuracoes,
     Edit as Editar,
     KeyboardArrowDown as Expandir,
@@ -7,6 +9,7 @@ import {
     Print as Impressora,
     Home as Inicio,
     DeleteSweep as Lixeira,
+    SyncAlt as Movimentos,
     Add as Novo,
     People as Pessoas,
     KeyboardArrowUp as Retrair,
@@ -17,7 +20,10 @@ import { IconBaseStyle } from './style';
 
 /// Icones de rota
 const Settings = () => <Configuracoes fontSize="large" sx={IconBaseStyle} />
+const Registers = () => <Cadastros fontSize="large" sx={IconBaseStyle} />
 const People = () => <Pessoas fontSize="large" sx={IconBaseStyle} />
+const Transactions = () => <Movimentos fontSize="large" sx={IconBaseStyle} />
+const Categories = () => <Categorias fontSize="large" sx={IconBaseStyle} />
 const Home = () => <Inicio fontSize="large" sx={IconBaseStyle} />
 
 /// Icones comuns
@@ -32,10 +38,5 @@ const True = () => <Verdadeiro fontSize="medium" color='success' />
 const False = () => <Falso fontSize="medium" color='error' />
 const Printer = ({ ...props }) => <Tooltip title="Imprimir"><Impressora fontSize="medium" {...props} /></Tooltip>
 
-export {
-    Create,
-    Delete, Expand, False,
-    Filter, Home, People, Printer, Retract,
-    Settings, True, Update
-};
+export { Categories, Create, Delete, Expand, False, Filter, Home, People, Printer, Registers, Retract, Settings, Transactions, True, Update };
 

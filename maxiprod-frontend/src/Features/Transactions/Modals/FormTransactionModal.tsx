@@ -2,16 +2,16 @@ import { get } from "lodash";
 import { observer } from "mobx-react";
 import { Create, Update } from "../../../Components/Icons";
 import { useDialogContext } from "../../../Contexts/DialogContext";
-import FormsPeopleContainer from "../Containers/FormModalContainer";
-import store from "../Stores/FormPeopleStore";
+import FormsTransactionContainer from "../Containers/FormModalContainer";
+import store from "../Stores/FormTransactionStore";
 
-type FormPeopleModalProps = {
+type FormTransactionModalProps = {
   onSuccess?: () => void;
   object?: object;
   type?: 'Create' | 'Update'
 }
 
-const FormPeopleModal = observer((props: FormPeopleModalProps) => {
+const FormTransactionModal = observer((props: FormTransactionModalProps) => {
   const { openDialog, closeDialog } = useDialogContext();
 
   const handleOpenModal = async () => {
@@ -26,8 +26,8 @@ const FormPeopleModal = observer((props: FormPeopleModalProps) => {
 
   const OpenModal = (mode: 'Editar' | 'Nova') => {
     openDialog({
-      component: <FormsPeopleContainer object={props.object} />,
-      title: `${mode} pessoa`,
+      component: <FormsTransactionContainer object={props.object} />,
+      title: `${mode} transação`,
       okCallback: handleSubmit,
       cancelCallback: handleCloseModal,
       okText: "Confirmar",
@@ -55,4 +55,4 @@ const FormPeopleModal = observer((props: FormPeopleModalProps) => {
   );
 });
 
-export default FormPeopleModal;
+export default FormTransactionModal;
