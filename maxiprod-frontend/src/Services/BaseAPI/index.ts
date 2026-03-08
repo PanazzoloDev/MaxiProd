@@ -1,4 +1,5 @@
 import axios, { type AxiosRequestConfig, type AxiosResponse } from "axios";
+import { get } from "lodash";
 import { toast } from "react-toastify";
 import type { responseType } from "../../Commons/types";
 
@@ -11,26 +12,18 @@ export const API = axios.create({
 // problemas na requisições, filtrar e/ou notificar de forma simples
 export const handleRequest = (response?: AxiosResponse | Error, method: '' | 'post' | 'put' | 'delete' = ''): Promise<responseType | Error> => {
   return new Promise<responseType | Error>((resolve) => {
-
+    
     // Verifica se ocorreu um erro na requisição
     if (response instanceof Error) {
-      const errorMessage = response ? response.message || 'Erro na requisição.' : 'Erro na requisição.';
-      toast.error(errorMessage)
-      resolve(response);
-      return;
-    }
-
-    // Verifica se houve um erro na resposta da requisição (incluindo erro 404)
-    if (!response || response.status === undefined || ![200, 201].includes(response.status)) {
-      const errorMessage = response ? response.statusText || 'Erro na requisição.' : 'Erro na requisição.';
+      const errorMessage = (get(response, 'response.data',[]) ?? ['Erro na requisição.']).join(", ");
       toast.error(errorMessage)
       resolve(new Error(errorMessage));
       return;
     }
 
-    // Verifica se houve um erro na resposta da requisição
-    if (!response || ![200, 201].includes(response.status)) {
-      const errorMessage = response ? response.data.message || 'Erro na requisição.' : 'Erro na requisição.';
+    // Verifica se houve um erro na resposta da requisição (incluindo erro 404)
+    if (!response || response.status === undefined || ![200, 201, 204].includes(response.status)) {
+      const errorMessage = response ? response.statusText : 'Erro na requisição.';
       toast.error(errorMessage)
       resolve(new Error(errorMessage));
       return;
@@ -49,13 +42,6 @@ export const handleRequest = (response?: AxiosResponse | Error, method: '' | 'po
     });
   });
 };
-
-export const Authenticate = async (username: string, password: string): Promise<responseType | Error> => {
-  return API
-    .post(`/login?code=${username}&password=${password}`)
-    .then((response: AxiosResponse) => handleRequest(response))
-    .catch((error: Error) => handleRequest(error));
-}
 
 export const Post = async (url: string, data?: object, config?: AxiosRequestConfig): Promise<responseType | Error> => {
   return API

@@ -14,18 +14,18 @@ interface responseType {
 export type DialogWidthType = "xl" | "lg" | "md" | "sm";
 
 export type OpenDialogType = (args: {
-  component: React.ReactNode;
-  title: string;
-  okCallback: () => void;
-  cancelCallback?: () => void;
-  width?: DialogWidthType;
-  okText?: string;
-  cancelText?: string;
+    component: React.ReactNode;
+    title: string;
+    okCallback: () => void;
+    cancelCallback?: () => void;
+    width?: DialogWidthType;
+    okText?: string;
+    cancelText?: string;
 }) => void;
 
 export interface DialogPropTypes {
-  openDialog: OpenDialogType;
-  closeDialog: EmptyFunctionType;
+    openDialog: OpenDialogType;
+    closeDialog: EmptyFunctionType;
 }
 
 export type EmptyFunctionType = () => void;
@@ -36,19 +36,19 @@ type BaseDatagridStoreType = {
     data: object[],
     columns: columnDatagridType[],
     subColumns?: columnDatagridType[],
-    FetchData?: 
-        (
-            pageSize: number,
-            pageNumber: number,
-            search?: string,
-            defaultFilters?: Array<FilterType>,
-            customFilters?: Array<FilterType>
-        ) => Promise<responseType | Error>
+    FetchData?:
+    (
+        pageSize: number,
+        pageNumber: number,
+        search?: string,
+        defaultFilters?: Array<FilterType>,
+        customFilters?: Array<FilterType>
+    ) => Promise<responseType | Error>
 }
 
 type actionType = {
     key: number,
-    component: (row?:object) => JSX.Element
+    component: (row?: object) => JSX.Element
 }
 
 type columnDatagridType = {
@@ -95,13 +95,9 @@ type snackbarProps = {
 
 
 export type {
-    Controls,
-    BaseDatagridStoreType,
-    columnDatagridType,
-    responseType,
-    snackbarProps,
-    actionType,
-    typeControl,
-    userType,
-    FilterType
+    actionType, BaseDatagridStoreType,
+    columnDatagridType, Controls, FilterType, responseType,
+    snackbarProps, typeControl,
+    userType
 };
+

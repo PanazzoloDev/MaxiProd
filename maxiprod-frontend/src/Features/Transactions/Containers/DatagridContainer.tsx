@@ -39,15 +39,6 @@ const DatagridContainer = observer(() => {
 
     const rowActions = [
         {
-            key: 3,
-            component: (obj?: object) =>
-                <FormTransactionModal
-                    onSuccess={onSuccess}
-                    object={obj}
-                    type="Update"
-                />
-        },
-        {
             key: 4,
             component: (obj?: object) =>
                 <ConfirmDeleteFormModal

@@ -1,4 +1,3 @@
-import Page from "../../Components/Page";
 import { GreetingContainer, HomeContainer } from "./style";
 
 
@@ -14,15 +13,15 @@ const HomePage = (): React.ReactNode => {
     const greeting = GetGrettingPhrase()
 
     return (
-        <Page>
+        <>
             <HomeContainer>
                 <GreetingContainer>
-                    {greeting}! <br/><br/>
-                    Bem vindo ao controle financeiro familiar<br/>
+                    {greeting}! <br /><br />
+                    Bem vindo ao controle financeiro familiar<br />
                     Home Control
                 </GreetingContainer>
-            </HomeContainer>        
-        </Page>
+            </HomeContainer>
+        </>
     )
 }
 

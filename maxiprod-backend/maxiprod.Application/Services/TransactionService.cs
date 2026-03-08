@@ -43,7 +43,7 @@ namespace maxiprod.Application.Services
             }
             catch (Exception ex)
             {
-                return Result.Fail(ex.Message);
+                return Result.Fail(ex.InnerException?.Message ?? ex.Message);
             }
         }
 
@@ -107,7 +107,7 @@ namespace maxiprod.Application.Services
             if (age < 18 && ((TransactionTypeEnum)type) == TransactionTypeEnum.Revenue)
                 return false;
 
-             return false;
+             return true;
         }
     }
 }

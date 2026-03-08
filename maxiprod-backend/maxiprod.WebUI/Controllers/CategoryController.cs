@@ -16,23 +16,38 @@ namespace maxiprod.WebUI.Controllers
         }
 
         [HttpPost("query")]
-        public async Task<Result<IEnumerable<ViewCategoryDTO>>> GetPaged(
+        public async Task<IActionResult> GetPaged(
             int pageNumber = 1,
             int pageSize = 50
         ){
-            return await _service.GetPagedAsync(pageNumber, pageSize);
+            var results = await _service.GetPagedAsync(pageNumber, pageSize);
+
+            if (results.IsFailed)
+                return BadRequest(results.Errors.Select(e => e.Message));
+
+            return Ok(results.Value);
         }
 
         [HttpGet("{id}")]
-        public async Task<Result<ViewCategoryDTO>> GetById(int id)
+        public async Task<IActionResult> GetById(int id)
         {
-            return await _service.GetByIdAsync(id);
+            var result = await _service.GetByIdAsync(id);
+
+            if (result.IsFailed)
+                return BadRequest(result.Errors.Select(e => e.Message));
+
+            return Ok(result.Value);
         }
 
         [HttpPost]
-        public async Task<Result<ViewCategoryDTO>> Create([FromBody] CreateCategoryDTO model)
+        public async Task<IActionResult> Create([FromBody] CreateCategoryDTO model)
         {
-            return await _service.CreateAsync(model);
+            var result = await _service.CreateAsync(model);
+
+            if (result.IsFailed)
+                return BadRequest(result.Errors.Select(e => e.Message));
+
+            return Created();
         }
 
         //[HttpPut("{id}")]
@@ -45,9 +60,14 @@ namespace maxiprod.WebUI.Controllers
         //}
 
         [HttpDelete("{id}")]
-        public async Task<Result<bool>> Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            return await _service.DeleteByIdAsync(id);
+            var result = await _service.DeleteByIdAsync(id);
+
+            if (result.IsFailed)
+                return BadRequest(result.Errors.Select(e => e.Message));
+
+            return Ok(result.Value);
         }
     }
 }

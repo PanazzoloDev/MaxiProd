@@ -37,10 +37,14 @@ const FormTransactionModal = observer((props: FormTransactionModalProps) => {
   }
 
   const handleSubmit = () => {
-    store.submit(props.type).then(() => {
-      handleCloseModal()
-      if (props.onSuccess) props.onSuccess()
+    store.submit(props.type).then((response) => {
+      if (get(response, 'message', null) == null) {
+        handleCloseModal()
+        if (props.onSuccess)
+          props.onSuccess();
+      }
     })
+
   }
 
   const handleCloseModal = () => {

@@ -7,19 +7,27 @@ import {
 import { DialogProvider } from '../Contexts/DialogContext';
 import HomePage from '../Features/Home';
 //import ProfilePage from '../Features/Profile';
+import Page from '../Components/Page';
 import PeoplePage from '../Features/People';
 import TransactionPage from '../Features/Transactions';
 
+
+const PageScreen = (props: { children: React.JSX.Element }) => {
+    return <Page>{props.children}</Page>
+}
+
 const AppRoute = () => {
+
+
     return (
         <Router>
             <DialogProvider>
                 <Routes>
-                    <Route path="/" element={<HomePage />} />
-                    <Route path="/home" element={<HomePage />} />
+                    <Route path="/" element={<PageScreen><HomePage /></PageScreen>} />
+                    <Route path="/home" element={<PageScreen><HomePage /></PageScreen>} />
 
-                    <Route path="/transactions" element={<TransactionPage />} />
-                    <Route path="/people" element={<PeoplePage />} />
+                    <Route path="/transactions" element={<PageScreen><TransactionPage /></PageScreen>} />
+                    <Route path="/people" element={<PageScreen><PeoplePage /></PageScreen>} />
                     {/*<Route path="/settings" element={<ParametersScreen />} />
 
                     <Route path="/profile" element={<ProfileScreen />} /> */}

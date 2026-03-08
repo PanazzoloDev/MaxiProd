@@ -7,12 +7,12 @@ class DatagridPeopleStore extends BaseDatagridStore {
             endpoint: '/people/query',
             columns: [
                 {
-                    header: 'Idade',
-                    accessor: 'age',
+                    header: 'Código',
+                    accessor: 'id',
                     alignment: 'center',
                     filter: 'Equals',
                     type: 'number',
-                    width: 10
+                    width: 20
                 },
                 {
                     header: 'Nome',
@@ -20,8 +20,16 @@ class DatagridPeopleStore extends BaseDatagridStore {
                     filter: 'Contains',
                     type: 'string',
                     alignment: 'left',
-                    width: 60
-                }
+                    width: 140
+                },
+                {
+                    header: 'Idade',
+                    accessor: 'age',
+                    alignment: 'center',
+                    filter: 'Equals',
+                    type: 'number',
+                    width: 20
+                },
             ]
         });
     }

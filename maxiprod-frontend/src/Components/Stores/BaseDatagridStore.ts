@@ -46,7 +46,7 @@ class BaseDatagridStore {
 
         return await Post(`${this.endpoint}?pageNumber=${pageNumber}&pageSize=${pageSize}`, filters)
             .then((response) => {
-                this.data = get(response, 'data.value', [])
+                this.data = get(response, "data", []) as object[]
             })
 
     }
