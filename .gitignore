@@ -1,0 +1,37 @@
+# ---------- .NET ----------
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.log
+
+# Binários .NET
+*.dll
+*.exe
+*.pdb
+
+# Visual Studio
+.vs/
+
+# ---------- Node / React ----------
+node_modules/
+dist/
+build/
+coverage/
+
+# Vite
+.vite/
+
+# ---------- Environment ----------
+.env
+.env.local
+.env.*
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
+
+# ---------- Editor ----------
+.vscode/
+.idea/
