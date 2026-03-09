@@ -11,6 +11,7 @@ import Page from '../Components/Page';
 import FinancialSummaryPage from '../Features/FinancialSummary';
 import PeoplePage from '../Features/People';
 import TransactionPage from '../Features/Transactions';
+import CategoriesPage from '../Features/Categories';
 
 
 const PageScreen = (props: { children: React.JSX.Element }) => {
@@ -30,6 +31,7 @@ const AppRoute = () => {
                     <Route path="/transactions" element={<PageScreen><TransactionPage /></PageScreen>} />
                     <Route path="/people" element={<PageScreen><PeoplePage /></PageScreen>} />
                     <Route path="/financial-summary" element={<PageScreen><FinancialSummaryPage /></PageScreen>} />
+                    <Route path="/categories" element={<PageScreen><CategoriesPage /></PageScreen>} />
 
 
                 </Routes>

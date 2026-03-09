@@ -6,6 +6,7 @@ const booleanSelectOptions: { [key: string]: string } = {
 const categoryTypeDictionary: { [key: string]: string } = {
     1: 'Receita',
     2: 'Despesa',
+    3: 'Despesa',
 }
 const transactionTypeDictionary: { [key: string]: string } = {
     1: 'Receitas',
@@ -18,11 +19,17 @@ const transactionTypesToSelect = [
     { label: 'Despesas', value: 2 }
 ]
 
+const categoryTypesToSelect = [
+    { label: 'Receitas', value: 1 },
+    { label: 'Despesas', value: 2 },
+    { label: 'Receitas e Despesas', value: 3 },
+]
+
+
 
 export {
     booleanSelectOptions,
-    categoryTypeDictionary,
-    transactionTypeDictionary,
+    categoryTypeDictionary, categoryTypesToSelect, transactionTypeDictionary,
     transactionTypesToSelect
 }
 
