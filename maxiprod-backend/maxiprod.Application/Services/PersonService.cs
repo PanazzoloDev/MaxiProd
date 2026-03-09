@@ -19,12 +19,12 @@ namespace maxiprod.Application.Services
             _repository = repository;
         }
 
-        public async Task<Result<FinancialSummaryResultDTO>> GetFinancialSummaryAsync()
+        public async Task<Result<FinancialSummaryResultDTO>> GetFinancialSummaryAsync(int pageNumber, int pageSize)
         {
             try
             {
                 var people = await _repository
-                    .GetPeopleWithTransactionsAsync();
+                    .GetPeopleWithTransactionsAsync(pageNumber, pageSize);
 
                 var personSummaryList = new List<PersonFinancialSummaryDTO>();
                 var peopleCount = 0; // Contador para evitar o uso de Count()

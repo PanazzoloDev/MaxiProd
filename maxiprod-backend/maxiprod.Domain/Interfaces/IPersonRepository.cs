@@ -8,6 +8,6 @@ namespace maxiprod.Domain.Interfaces
     /// </summary>
     public interface IPersonRepository : IRepositoryBase<Person>
     {
-        public Task<IEnumerable<Person>> GetPeopleWithTransactionsAsync();
+        public Task<IEnumerable<Person>> GetPeopleWithTransactionsAsync(int pageNumber, int pageSize);
     }
 }

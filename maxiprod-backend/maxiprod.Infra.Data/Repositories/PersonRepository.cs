@@ -12,12 +12,15 @@ namespace maxiprod.Infra.Data.Repositories
         /// </summary>
         public PersonRepository(Context.ApplicationContext context) : base(context){}
 
-        public async Task<IEnumerable<Person>> GetPeopleWithTransactionsAsync()
+        public async Task<IEnumerable<Person>> GetPeopleWithTransactionsAsync(int pageNumber, int pageSize)
         {
+            int skip = (pageNumber - 1) * pageSize;
             return await _dbSet
-                .AsNoTracking()
-                .Include(x => x.Transactions)
-                .ToListAsync();
+                   .Include(x => x.Transactions)
+                   .OrderBy(e => EF.Property<int>(e, "Id")) // Importante para evitar duplicação de registros entre paginas
+                   .Skip(skip)
+                   .Take(pageSize)
+                   .ToListAsync();
         }
     }
 }

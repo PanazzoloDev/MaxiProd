@@ -16,8 +16,11 @@ namespace maxiprod.WebUI.Controllers
         }
 
         [HttpPost("financial-summary")]
-        public async Task<IActionResult> GetPaged(){
-            var result = await _service.GetFinancialSummaryAsync();
+        public async Task<IActionResult> GetFinancialSummaryPaged(
+            int pageNumber = 1,
+            int pageSize = 50
+         ){
+            var result = await _service.GetFinancialSummaryAsync(pageNumber, pageSize);
 
             if (result.IsFailed)
                 return BadRequest(result.Errors.Select(e => e.Message));
